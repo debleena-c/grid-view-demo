@@ -1,0 +1,285 @@
+/*------------------------------kwow us page-----------------------------*/
+
+.bn-content{font-size: var(--text-mxl);line-height: 1.6;text-align: center;margin-top: 50px;}
+.bn-content h1{margin: 0px 0px 20px;font-size: var(--text-mdbig);}
+.bn-content b{display: block;margin: 20px;}
+.our-mission{background: linear-gradient(138deg, #E5FAF0 0%, #D1F1E2 54.17%, #E5FAF0 100%);padding: 30px 0px;margin: 60px 0px 0px;}
+.heading-xxl{font-size: var(--text-xxl);font-weight: 900;line-height: .8;margin: 40px 0px 20px;}
+.our-mission-left{position: relative;}
+.outlined-text-mission{position: absolute; left: 0; right: -115px; z-index: 1;}
+.outlined-text-mission img{position: relative;z-index: 1;width: 100%;}
+.outlined-text-mission::before {
+    content: "";
+    height: 180px;
+    width: 180px;
+    background: var(--color-mutegreen);
+    border: 2px dashed var(--color-white);
+    border-radius: 100%;
+    position: absolute;
+    left: calc(100% - 180px);
+    top: -25px;
+    z-index: 0;
+}
+.our-mission-brief{display: flex;gap: 25px;margin-top: 40px;}
+.our-mission-brief span{height: 80px;width: 80px;border: 1px dashed var(--color-black);border-radius: 36px 6px 6px 6px; flex: none;
+    display: inline-flex;justify-content: center;align-items: center;}
+.our-mission-brief span img{max-width: 32px;}
+.our-mission-brief h5{font-size: var(--text-mb5xl);font-weight: bold;margin: 10px 0px 14px;padding-bottom: 12px;border-bottom: 1px solid var(--color-black);}
+.our-mission-brief p{font-size: var(--text-md1);line-height: 1.75;margin: 0px;}
+.our-mission-right{padding-left: 130px;position: relative;min-height: 100%;border-left: 1px solid var(--color-emerald);width: 100%;
+    display: inline-block;}
+
+.our-team{padding: 50px 0px 80px;border-bottom: 3px solid var(--color-mauve);}
+.our-team-left h3{font-size: var(--text-big);font-weight: 900;}
+.our-team-left p{font-size: var(--text-xl);line-height: 1.7;color: var(--color-emerald);margin: 40px 0px 20px;}
+.our-team-left img{max-width: 345px;}
+.team-slider{margin-left: 20px;}
+.team-member{height: 450px;position: relative;}
+.team-slider .slick-slide {
+    margin: 0px 20px;
+  }
+.team-slider .slick-current {
+    opacity: 1;
+    transition: all .4s ease-in-out;
+}
+.team-slider .slick-arrow:before{content: "" !important;width: 24px; height: 24px; position: absolute; top: 50%; left: 50%;
+    margin-left: -12px; margin-top: -12px;}
+.team-slider .slick-prev:before, .team-slider .slick-next:before{background: url(../images/arrow-angle.png) no-repeat center;
+    background-size: contain;}
+.team-slider .slick-prev:before{transform: rotate(180deg);}
+.team-slider .slick-prev, .team-slider .slick-next{width: 60px;height: 60px;background: var(--color-themegreen);top: calc(100% + 40px);
+    left: 20px;}
+.team-slider .slick-next{background: #FDE7E1;left: 90px;}
+.team-slider .slick-prev:hover, .team-slider .slick-prev:focus, .team-slider .slick-next:hover, .team-slider .slick-next:focus{
+    background: var(--color-mutegreen);
+}
+.team-slider .slick-slide .team-member img{height: 100%;width: 100%;position: relative;transition: border-radius .4s ease-in-out;}
+.team-slider .slick-slide .team-member::before{content: "";width: 60px;background: var(--color-pink);position: absolute;left: -20px;
+    bottom: 0;top: 65px;z-index: 0;border-radius: 20px 0px 0px 0px;transform: translateX(100%);transition: transform .4s ease-in-out;}
+.team-slider .slick-current .team-member img{border-radius: 50px 0px 0px 0px;}
+.team-slider .slick-current .team-member::before{transform: translateX(0);transition: transform .4s ease-in-out;}
+
+.team-brief{font-size: var(--text-xl);line-height: 1.7;position: relative;}
+.team-brief h4{color: var(--color-black);margin: 20px 0px 10px;font-size: var(--text-xl);}
+.team-brief p{color: var(--color-emerald);margin: 0px;}
+
+.testimonial{border-bottom: 1px solid var(--color-mauve); background: linear-gradient(180deg, #FFF4F3 0%, rgba(255, 253, 252, 0.00) 100%);
+    padding: 80px 0px 20px;position: relative;}
+.testimonial .big-heading{margin-bottom: 20px;}
+.say-outlined{width: max-content;position: relative;}
+.say-outlined img{max-width: 280px;position: relative;z-index: 1;}
+.say-outlined:before{content: "";height: 160px;width: 160px;background: var(--color-seagreen);border: 1px dashed var(--color-green);
+    border-radius: 100%; position: absolute;bottom: -32px;right: -95px;z-index: 0;}
+.say-outlined:after{content: "";width: 80px;height: 80px;background-color: var(--color-seagreen);border: 1px dashed var(--color-pink);
+    border-radius: 100%;background-image: url(../images/quote.png);background-repeat: no-repeat;background-position: center;
+    background-size: 56%;position: absolute;left: calc(100% + 30px); top: 13px;}
+
+.testimonial-brief p{font-size: var(--text-2xl);font-style: italic;line-height: 1.8;margin: 0px 0px 10px;}
+.testimonial-name{display: flex;gap: 10px;align-items: center;}
+.testimonial-name h5{font-size: var(--text-mid);font-weight: bold;margin: 0px;}
+.testimonial-name span img{max-width: 28px;}
+.testimonial-slider .slick-dots{bottom: -32px;width: auto;}
+.testimonial-slider .slick-dots li{width: auto;height: auto;}
+.testimonial-slider .slick-dots li button:before{content: "";}
+.testimonial-slider .slick-dots li button{width: 60px;height: 10px;border-radius: 30px;background: var(--color-seagreen);padding: 0px;}
+.testimonial-slider .slick-dots li.slick-active button{background: var(--color-babypink);}
+
+
+@media (max-width: 1200px){
+    /*------------------------------kwow us page-----------------------------*/
+    .heading-xxl {
+        font-size: var(--text-wbmdbig);
+    }
+    .our-mission-brief h5 {
+        font-size: var(--text-5xl);
+    }
+    .our-mission-right{padding-left: 110px;}
+    .our-team-left img {
+        max-width: 260px;
+    }
+    .our-team-left h3 {
+        font-size: var(--text-mdbig);
+    }
+    .our-team-left p {
+        font-size: var(--text-lg);
+    }
+    .team-brief{font-size: var(--text-lg);}
+    .team-brief h4{font-size: var(--text-lg);}
+    .team-member{height: 360px;}
+    .team-slider .slick-prev, .team-slider .slick-next{width: 50px;height: 50px;}
+    .team-slider .slick-arrow:before{width: 18px;height: 18px;margin-left: -9px;margin-top: -9px;}
+    .team-slider .slick-next{left: 80px;}
+
+    .say-outlined img {
+        max-width: 240px;
+    }
+    .say-outlined:before{height: 140px;width: 140px;bottom: -18px;}
+    .testimonial-brief p {font-size: var(--text-mxl);}
+    .testimonial-name h5{font-size: var(--text-3xl);}
+}
+
+
+@media (max-width: 992px){
+    /*------------------------------kwow us page-----------------------------*/
+    .bn-content {
+        font-size: var(--text-xl);
+    }
+    .outlined-text-mission{
+        position: relative;
+        left: inherit;
+        right: inherit;
+        z-index: 1;
+        width: max-content;
+        margin: 30px 0px 10px;
+    }
+    .outlined-text-mission img{max-width: 350px;}
+    .outlined-text-mission::before {
+        content: "";
+        height: 110px;
+        width: 110px;
+        left: calc(100% - 80px);
+    }
+    .our-mission-right {
+        padding-left: 0px;
+        border: none;
+    }
+    .heading-xxl {
+        font-size: var(--text-big);
+    }
+    .our-mission-brief span {
+        height: 70px;
+        width: 70px;
+    }
+    .our-mission-brief span img {
+        max-width: 26px;
+    }
+    .our-mission-brief h5 {
+        font-size: var(--text-4xl);
+    }
+    .our-team-left img {
+        max-width: 230px;
+    }
+    .our-team-left h3 {
+        font-size: var(--text-9xl);
+    }
+    
+    .our-team-left p{margin: 20px 0px 30px;}
+    .say-outlined{margin: 0px 0px 50px;}
+    .say-outlined img {
+        max-width: 180px;
+    }
+    .say-outlined:before {
+        height: 110px;
+        width: 110px;
+        bottom: -18px;
+        right: -75px;
+    }
+    .say-outlined:after {
+        width: 60px;
+        height: 60px;
+        background-size: 50%;
+        position: absolute;
+        top: 0px;
+    }
+    .testimonial-brief p {font-size: var(--text-xl);}
+    .testimonial-name h5{font-size: var(--text-2xl);}
+}
+
+@media (max-width: 768px){
+    /*------------------------------kwow us page-----------------------------*/
+    .bn-content {
+        font-size: var(--text-lg);
+    }
+    .heading-xxl {
+        font-size: var(--text-mdbig);
+    }
+    .our-mission-brief h5 {
+        font-size: var(--text-mid);
+    }
+    .our-team-left img {
+        max-width: 200px;
+    }
+    .our-team-left h3 {
+        font-size: var(--text-8xl);
+    }
+    .team-member{height: 300px;}
+    .team-brief{font-size: var(--text-md);}
+    .team-brief h4{font-size: var(--text-md);}
+    .our-team-left p {
+        font-size: var(--text-md);
+    }
+    .say-outlined img {
+        max-width: 90px;
+    }
+    .say-outlined:before {
+        height: 70px;
+    width: 70px;
+    bottom: -15px;
+    right: -53px;
+    }
+    .say-outlined:after {
+        width: 44px;
+    height: 44px;
+    background-size: 45%;
+    position: absolute;
+    top: -10px;
+    }
+    .testimonial-brief p {font-size: var(--text-lg);}
+    .testimonial-name h5{font-size: var(--text-mxl);}
+    .testimonial-slider .slick-dots li button{width: 45px;height: 8px;}
+    .testimonial{padding-top: 60px;}
+}
+
+@media (max-width: 576px){
+    /*------------------------------kwow us page-----------------------------*/
+    .bn-content {
+        font-size: var(--text-md1);
+    }
+    .heading-xxl {
+        font-size: var(--text-9xl);
+    }
+    .outlined-text-mission img {
+        max-width: 285px;
+    }
+    .outlined-text-mission::before {
+        content: "";
+        height: 90px;
+        width: 90px;
+        left: calc(100% - 80px);
+        top: -20px;
+    }
+    .our-mission-brief h5 {
+        font-size: var(--text-3xl);
+    }
+    .our-mission-brief span {
+        height: 55px;
+        width: 55px;
+    }
+    .our-mission-brief span img {
+        max-width: 20px;
+    }
+    .our-mission-brief{gap: 15px;}
+    .our-team-left img {
+        max-width: 150px;
+    }
+    .our-team-left h3 {
+        font-size: var(--text-7xl);
+    }
+    .testimonial-brief p {font-size: var(--text-md);}
+    .testimonial-name h5{font-size: var(--text-xl);}
+    .testimonial-slider .slick-dots li button{width: 42px;height: 7px;}
+}
+
+@media (max-width: 480px){
+    /*------------------------------kwow us page-----------------------------*/
+    .heading-xxl {
+        font-size: var(--text-7xl);
+    }
+    .outlined-text-mission img {
+        max-width: 240px;
+    }
+    .our-mission-brief h5 {
+        font-size: var(--text-mxl);
+    }
+    .testimonial-name h5{font-size: var(--text-lg);}
+}

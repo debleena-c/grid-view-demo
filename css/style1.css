@@ -1,0 +1,101 @@
+
+
+/*------------------------------place order page-----------------------------*/
+
+.placeorder-main{padding: 60px 0px;margin-top: 60px;position: relative;}
+.placeorder-main .heading-content{font-weight: 900;}
+.nft-token-outline{width: max-content;position: relative;margin: 25px 0px 60px;}
+.nft-token-outline img{width: 100%;position: relative;max-width: 650px;}
+.nft-token-outline:before {
+    content: "";
+    height: 140px;
+    width: 140px;
+    background: rgba(249,228,225,.5);
+    border: 2px dashed var(--color-mauve);
+    border-radius: 100%;
+    position: absolute;
+    left: calc(100% - 140px);
+    top: -15px;
+    z-index: 0;
+}
+.placeorder-brief{padding-left: 20px;}
+.placeorder-brief .focus-content b{display: inline;}
+.placeorder-brief .focus-content{padding-bottom: 40px;margin-bottom: 25px;border-bottom: 2px dashed var(--color-themepink);line-height: 2.1;}
+.focus-info{font-size: var(--text-xl);font-weight: 900;margin: 0px 0px 40px;}
+.placeorder-img{position: relative;height: max-content;}
+.placeorder-img::before{content: "";height: calc(100% + 120px);width: 300px;background: linear-gradient(138deg, #E5FAF0 0%, #D1F1E2 54.17%, #E5FAF0 100%);
+    position: absolute;left: calc(-8% - 50px);top: -60px;bottom: -60px;z-index: 0;}
+.placeorder-img img{position: relative;width: 100%;}
+
+
+@media (max-width: 1200px){
+
+/*------------------------------place order page-----------------------------*/
+
+.nft-token-outline img{max-width: 500px;}
+.nft-token-outline:before{height: 110px;width: 110px;left: calc(100% - 110px);}
+
+
+}
+
+@media (max-width: 992px){
+
+    
+
+/*------------------------------place order page-----------------------------*/
+
+.placeorder-img::before{width: 220px;}
+.nft-token-outline img {
+    max-width: 420px;
+}
+.placeorder-main{padding: 60px 0px 10px;}
+}
+
+
+@media (max-width: 768px){
+
+/*------------------------------place order page-----------------------------*/
+
+.placeorder-img img {
+    max-height: 200px;
+}
+.placeorder-img::before {
+    width: 140px;
+}
+.placeorder-main {
+    padding: 25px 0px 10px;
+}
+.nft-token-outline img {
+    max-width: 300px;
+}
+.nft-token-outline:before {
+    height: 70px;
+    width: 70px;
+    left: calc(100% - 70px);
+}
+
+}
+
+
+@media (max-width: 576px){
+
+
+/*------------------------------place order page-----------------------------*/
+
+.placeorder-brief{padding: 0px;text-align: center;}
+.placeorder-img{display: none;}
+.nft-token-outline{margin: 25px auto 30px;}
+.nft-token-outline img {
+    max-width: 190px;
+}
+.nft-token-outline:before {
+    height: 40px;
+    width: 40px;
+    left: calc(100% - 40px);
+    top: -4px;
+}
+.placeorder-main{margin-top: 0px;}
+
+    
+}
+
